@@ -1860,7 +1860,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #4598c8;
+			box-shadow: 0 0 0 2px #686868;
 		}
 
 	select {
@@ -1957,7 +1957,7 @@ input, select, textarea {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #4598c8;
+			box-shadow: 0 0 0 2px #686868;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2818,8 +2818,8 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #4598c8;
-			color: #c8ece9;
+			background-color: #686868;
+			color: white;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2851,7 +2851,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c8ece9;
+				color: white;
 			}
 
 			.wrapper.style1 label {
@@ -2872,12 +2872,12 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #4598c8;
+					background: #686868;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c8ece9;
+				color: white;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2888,7 +2888,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #4598c8;
+				color: #686868;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -3352,7 +3352,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #4598c8;
+		background: #686868;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
