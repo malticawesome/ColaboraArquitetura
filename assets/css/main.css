@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 
 /*
 	Spectral by Pixelarity
@@ -3996,4 +3997,8 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	.logo-font {
+		font-family: Megrim, cursive;
 	}
