@@ -88,7 +88,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #2e3842;
+		background: #737373;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1860,7 +1860,7 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			box-shadow: 0 0 0 2px #737373;
+			box-shadow: 0 0 0 2px #a1a6aa;
 		}
 
 	select {
@@ -1950,14 +1950,14 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #2e3842;
+			background: #737373;
 			color: #fff;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #737373;
+			box-shadow: 0 0 0 2px #a1a6aa;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2818,7 +2818,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #737373;
+			background-color: #a1a6aa;
 			color: white;
 		}
 
@@ -2872,7 +2872,7 @@ input, select, textarea {
 
 				.wrapper.style1 select option {
 					color: #ffffff;
-					background: #737373;
+					background: #a1a6aa;
 				}
 
 			.wrapper.style1 input[type="checkbox"] + label,
@@ -2888,7 +2888,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="checkbox"]:checked + label:before,
 			.wrapper.style1 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #737373;
+				color: #a1a6aa;
 			}
 
 			.wrapper.style1 ::-webkit-input-placeholder {
@@ -2977,11 +2977,11 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: #737373;
 		}
 
 		.wrapper.style3 {
-			background-color: #6289c3;
+			background-color: #a1a6aa;
 			color: #d7e1f0;
 		}
 
@@ -3035,7 +3035,7 @@ input, select, textarea {
 
 				.wrapper.style3 select option {
 					color: #ffffff;
-					background: #6289c3;
+					background: #a1a6aa;
 				}
 
 			.wrapper.style3 input[type="checkbox"] + label,
@@ -3051,7 +3051,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="checkbox"]:checked + label:before,
 			.wrapper.style3 input[type="radio"]:checked + label:before {
 				background: #ffffff;
-				color: #6289c3;
+				color: #a1a6aa;
 			}
 
 			.wrapper.style3 ::-webkit-input-placeholder {
@@ -3149,11 +3149,11 @@ input, select, textarea {
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: #737373;
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: #737373;
 			}
 
 			.wrapper.style5 hr {
@@ -3181,7 +3181,7 @@ input, select, textarea {
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: #737373;
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3197,7 +3197,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style5 select option {
-					color: #2E3842;
+					color: #737373;
 					background: #ffffff;
 				}
 
@@ -3213,7 +3213,7 @@ input, select, textarea {
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #2E3842;
+				background: #737373;
 				color: #ffffff;
 			}
 
@@ -3254,7 +3254,7 @@ input, select, textarea {
 				}
 
 			.wrapper.style5 table th {
-				color: #2E3842;
+				color: #737373;
 			}
 
 			.wrapper.style5 table thead {
@@ -3275,7 +3275,7 @@ input, select, textarea {
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
 				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #2E3842;
+				color: #737373;
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3352,7 +3352,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #737373;
+		background: #a1a6aa;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -3695,7 +3695,7 @@ input, select, textarea {
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #2e3842;
+			background: #737373;
 			display: block;
 			width: 100%;
 			height: 100%;
