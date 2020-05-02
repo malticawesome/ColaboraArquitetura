@@ -3964,119 +3964,119 @@ input, select, textarea {
 
 /* Faces */
 
-ul.faces {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0;
-}
-
-ul.faces li {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    -moz-flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    padding-left: 0;
-    text-align: center;
-    margin: 0 0 0 4rem;
-}
-
-ul.faces li:first-child {
-    margin-left: 0;
-}
-
-ul.faces li > :last-child {
-    margin-bottom: 0;
-}
-
-ul.faces li .image {
-    border-radius: 100%;
-    margin: 0 0 1.5rem 0;
-}
-
-ul.faces li .image img {
-    border-radius: 100%;
-    width: 8rem;
-}
-
-ul.faces li h3 {
-    font-size: 0.8rem;
-    margin: 0 0 0.25rem 0;
-}
-
-ul.faces li p {
-    font-size: 0.8rem;
-}
-
-@media screen and (max-width: 1280px) {
-
-    ul.faces li {
-        margin: 0 0 0 3rem;
-    }
-
-}
-
-@media screen and (max-width: 980px) {
-
-    ul.faces li {
-        margin: 0 0 0 2rem;
-    }
-
-}
-
-@media screen and (max-width: 736px) {
-
-    ul.faces li .image img {
-        width: 6rem;
-    }
-
-}
-
-@media screen and (max-width: 480px) {
-
     ul.faces {
-        display: block;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
     }
 
-    ul.faces li {
-        margin: 0 0 2rem 0;
-    }
+        ul.faces li {
+            display: -moz-flex;
+            display: -webkit-flex;
+            display: -ms-flex;
+            display: flex;
+            -moz-flex-direction: column;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -moz-align-items: center;
+            -webkit-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            padding-left: 0;
+            text-align: center;
+            margin: 0 0 0 4rem;
+        }
 
-    ul.faces li .image img {
-        width: 10rem;
-    }
+            ul.faces li:first-child {
+                margin-left: 0;
+            }
 
-    ul.faces li h3 {
-        font-size: 1rem;
-    }
+            ul.faces li > :last-child {
+                margin-bottom: 0;
+            }
 
-    ul.faces li p {
-        font-size: 1rem;
-    }
+            ul.faces li .image {
+                border-radius: 100%;
+                margin: 0 0 1.5rem 0;
+            }
 
-    ul.faces li:last-child {
-        margin-bottom: 0;
-    }
+            ul.faces li .image img {
+                border-radius: 100%;
+                width: 8rem;
+            }
 
-}
+            ul.faces li h3 {
+                font-size: 0.8rem;
+                margin: 0 0 0.25rem 0;
+            }
+
+            ul.faces li p {
+                font-size: 0.8rem;
+            }
+
+        @media screen and (max-width: 1280px) {
+
+            ul.faces li {
+                margin: 0 0 0 3rem;
+            }
+
+        }
+
+        @media screen and (max-width: 980px) {
+
+            ul.faces li {
+                margin: 0 0 0 2rem;
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            ul.faces li .image img {
+                width: 6rem;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            ul.faces {
+                display: block;
+            }
+
+                ul.faces li {
+                    margin: 0 0 2rem 0;
+                }
+
+                    ul.faces li .image img {
+                        width: 10rem;
+                    }
+
+                    ul.faces li h3 {
+                        font-size: 1rem;
+                    }
+
+                    ul.faces li p {
+                        font-size: 1rem;
+                    }
+
+                    ul.faces li:last-child {
+                        margin-bottom: 0;
+                    }
+
+        }
 
 
 /* Landing */
