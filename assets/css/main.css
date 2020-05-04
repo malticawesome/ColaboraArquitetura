@@ -161,6 +161,7 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -2490,7 +2491,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #53b678;
+			background-color: #f1d246;;
 			box-shadow: none !important;
 			color: #ffffff !important;
 		}
@@ -3797,8 +3798,6 @@ input, select, textarea {
 				}
 
 				#cta .inner .actions {
-					margin-left: auto;
-					margin-right: auto;
 					max-width: 20em;
 					width: 100%;
 				}
@@ -4165,8 +4164,6 @@ input, select, textarea {
         -webkit-flex-grow: 0;
         -ms-flex-grow: 0;
         flex-grow: 0;
-		margin-left: auto;
-		margin-right: auto;
     }
 
     .posts > * {
