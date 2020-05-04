@@ -164,7 +164,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
+		color: #f1d246;
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
@@ -2028,6 +2028,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+
 		}
 
 		.icon > .label {
@@ -2040,6 +2041,7 @@ input, select, textarea {
 
 		.icon.solid:before {
 			font-weight: 900;
+			color: #f1d246;
 		}
 
 		.icon.brands:before {
@@ -4163,6 +4165,8 @@ input, select, textarea {
         -webkit-flex-grow: 0;
         -ms-flex-grow: 0;
         flex-grow: 0;
+		margin-left: auto;
+		margin-right: auto;
     }
 
     .posts > * {
