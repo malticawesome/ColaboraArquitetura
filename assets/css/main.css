@@ -3898,11 +3898,11 @@ input, select, textarea {
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
+				color: #f1d246;
 			}
 
 				#footer .icons a:hover {
-					color: #fff;
+					color: #f1d246;
 				}
 
 		#footer .copyright {
