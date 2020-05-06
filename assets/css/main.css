@@ -114,14 +114,14 @@ input, select, textarea {
     .main-logo {
 		width: 10em;
 		padding-left: 0.5em !important;
-		color: #737373;
 	}
 
 	.subtitle {
-		font-size: 0.75em;
+		font-size: 0.9em;
 		text-align: center;
-		color: #a1a6aa;
+		color: white;
 		letter-spacing: 0.0001em !important;
+		text-transform: none !important;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -157,6 +157,10 @@ input, select, textarea {
 
 			.main-logo {
 				width: 7.5em;
+			}
+
+			.subtitle {
+				font-size: 0.65em;
 			}
 
 		}
@@ -3639,7 +3643,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #737373;
+				background: white;
 				content: '';
 				display: block;
 				height: 2px;
@@ -4144,7 +4148,7 @@ input, select, textarea {
 
 	.logo-font {
 		font-family: Megrim, cursive;
-		color: black;
+		color: #f1d246;
 	}
 
 /* Posts */
@@ -4589,7 +4593,7 @@ img {vertical-align: middle;}
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		postiion: relative;
-		margin: 0;
+		margin: -0.25em 0 0 -0.25em;
 	}
 
 	.tiles article {
@@ -4598,8 +4602,9 @@ img {vertical-align: middle;}
 		-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 		transition: transform 0.5s ease, opacity 0.5s ease;
 		position: relative;
-		width: 25%;
-		margin: 0;
+		width: calc(25% - 0.25em);
+
+		margin: 0.25em 0 0 0.25em;
 	}
 
 	.tiles article > .image {
@@ -4775,12 +4780,12 @@ img {vertical-align: middle;}
 	@media screen and (max-width: 1280px) {
 
 		.tiles {
-			margin: 0;
+			margin: -0.25em 0 0 -0.25em;
 		}
 
 		.tiles article {
-			width: calc(33.33333% - 1.25em);
-			margin: 0;
+			width: calc(33.33333% - 0.25em);
+			margin: 0.25em 0 0 0.25em;
 		}
 
 	}
@@ -4788,12 +4793,12 @@ img {vertical-align: middle;}
 	@media screen and (max-width: 980px) {
 
 		.tiles {
-			margin: -2.5em 0 0 -2.5em;
+			margin: -0.5em 0 0 -0.5em;
 		}
 
 		.tiles article {
-			width: calc(50% - 2.5em);
-			margin: 2.5em 0 0 2.5em;
+			width: calc(50% - 0.5em);
+			margin: 0.5em 0 0 0.5em;
 		}
 
 	}
@@ -4801,12 +4806,12 @@ img {vertical-align: middle;}
 	@media screen and (max-width: 736px) {
 
 		.tiles {
-			margin: -1.25em 0 0 -1.25em;
+			margin: -0.5em 0 0 -0.5em;
 		}
 
 		.tiles article {
-			width: calc(50% - 1.25em);
-			margin: 1.25em 0 0 1.25em;
+			width: calc(50% - 0.5em);
+			margin: 0.5em 0 0 0.5em;
 		}
 
 		.tiles article:hover > .image {
