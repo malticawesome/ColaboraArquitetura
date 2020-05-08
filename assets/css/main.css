@@ -4150,6 +4150,7 @@ input, select, textarea {
 	.logo-font {
 		font-family: Megrim, cursive;
 		color: #f1d246;
+        margin: 0;
 	}
 
 /* Posts */
