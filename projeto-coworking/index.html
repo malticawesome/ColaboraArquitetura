@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Colabora Arquitetura</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="shortcut icon" href="../images/logo-clean.png" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Colabora</a></h1>
+					</header>
+
+				<!-- Main -->
+					<section id="">
+						<header>
+							<div class="slideshow-container">
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL/OPÇÃO PARA CAPA.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL/1.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL/2.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL/3.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL/4.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL/5.jpg" style="width:100%">
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center; background: white">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+								<span class="dot" onclick="currentSlide(5)"></span>
+								<span class="dot" onclick="currentSlide(6)"></span>
+							</div>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>PROJETO DE DESIGN DE INTERIORES - COWORKING SHOPPING SUL</h3>
+								<p>Este projeto foi desenvolvido para um espaço aberto de uso coletivo de um Coworking localizado em um Shopping. Com o conceito de inovação e colaboração, seu foco é atrair um público jovem, desenvolvedor de novas ideias, que possa usar esse espaço como sua área de trabalho e ponto de encontro para reuniões e estudos. Tendo isso, o projeto apresenta um estilo industrial, fazendo uso de materiais como metalon, pranchas de madeira crua e cimento queimado, além de paredes com função de quadro negro. A troca de experiências entre os usuários é o ponto chave para esse espaço colaborativo, que, para cumprir tal função possui 50 m², com copa compartilhada, lounge para descanso,  mesas para trabalhos e estudo, e uma área para reunião coletiva, tendo capacidade de atender até 35 pessoas ao mesmo tempo.</p>
+
+							</div>
+						</section>
+					</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/colabora.arq/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Colabora Arquitetura - Made by <a href="https://maltic.com.br/">Maltic</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+</html>

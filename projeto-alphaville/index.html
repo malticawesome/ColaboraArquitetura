@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>Colabora Arquitetura</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="shortcut icon" href="../images/logo-clean.png" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="../index.html">Colabora</a></h1>
+					</header>
+
+				<!-- Main -->
+					<section id="">
+						<header>
+							<div class="slideshow-container">
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/ PROJETO ARQUITETÔNICO - RESIDENCIAL ALPHAVILLE/1.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/ PROJETO ARQUITETÔNICO - RESIDENCIAL ALPHAVILLE/2.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/ PROJETO ARQUITETÔNICO - RESIDENCIAL ALPHAVILLE/3.jpg" style="width:100%">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="../images/RENDERS/ PROJETO ARQUITETÔNICO - RESIDENCIAL ALPHAVILLE/4.jpg" style="width:100%">
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+							</div>
+							<br>
+							<div style="text-align:center; background: white">
+								<span class="dot" onclick="currentSlide(1)"></span>
+								<span class="dot" onclick="currentSlide(2)"></span>
+								<span class="dot" onclick="currentSlide(3)"></span>
+								<span class="dot" onclick="currentSlide(4)"></span>
+							</div>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>PROJETO ARQUITETÔNICO - RESIDENCIAL ALPHAVILLE</h3>
+								<p>Projeto de estudo desenvolvido para um terreno no Condomínio Residencial Alphaville, onde seu conceito é a liberdade e integração de espaços, focando em áreas amplas e ventiladas. Projetado para uma família jovem de quatro integrantes, incluindo duas crianças, a premissa para a criação dos espaços foi o aproveitamento da luminosidade natural da incidência solar, o que resultou no uso de materiais como vidro e brises. O estilo da casa é voltado para o industrial/ rústico, utilizando materiais como tijolo aparente, madeira e metais em tons escuros. A casa de 1° andar possui aproximadamente 200 m² com sala de estar e jantar, cozinha, três banheiros, sendo dois suítes, três quartos, área de serviço, área gourmet, quarto reversível para escritório e solário.</p>
+
+							</div>
+						</section>
+					</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/colabora.arq/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Colabora Arquitetura - Made by <a href="https://maltic.com.br/">Maltic</a></li>
+					</ul>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+</html>
