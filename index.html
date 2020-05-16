@@ -33,14 +33,14 @@
 					'email': email,
 					'message': message,
 					'name': name,
-					//'to': 'contato@colabora.arq.br'
-					'to': 'rcrdrobson@gmail.com',
+					'to': 'contato@colabora.arq.br',
 					'subject': 'Contato do Site'
 
 				};
 	
 				$.ajax({
 						url: "https://maltic.com.br/services/sendMailService.php",
+						crossDomain: true,
 						type: "post",
 						async: true,
 						data: messageArray,
