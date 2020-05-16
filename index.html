@@ -22,6 +22,46 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" />
 		<link rel="shortcut icon" href="images/logo-clean.png" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script type="text/javascript">
+			function sendMessage() {
+				var name = $("#demo-name").val();
+				var email = $("#demo-email").val();
+				var message = $("#demo-message").val();
+	
+				var messageArray = {
+					'email': email,
+					'message': message,
+					'name': name,
+					//'to': 'contato@colabora.arq.br'
+					'to': 'rcrdrobson@gmail.com',
+					'subject': 'Contato do Site'
+
+				};
+	
+				$.ajax({
+						url: "https://maltic.com.br/services/sendMailService.php",
+						type: "post",
+						async: true,
+						data: messageArray,
+						cache: false
+					})
+					.done(function(data) {
+						Swal.fire({
+							icon: 'success',
+							title: 'Mensagem enviada!',
+							text: 'Aguarde e entraremos em contato!'
+						});
+					})
+					.fail(function() {
+						Swal.fire({
+							icon: 'error',
+							title: 'Oops... Algo deu errado!',
+							text: 'Sua mensagem não foi enviada, tente novamente!'
+						});
+					});
+			}
+		</script>
 	</head>
 	<body class="landing is-preload">
 
@@ -297,7 +337,7 @@ auxiliando em projetos básicos de licitação, projetos arquitetônicos, layout
 							<header class="major">
 								<h2>Entre em contato</h2>
 							</header>
-							<form method="post" action="#">
+							<div>
 								<div class="row gtr-uniform">
 									<div class="col-6 col-12-xsmall">
 										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Nome" />
@@ -310,12 +350,12 @@ auxiliando em projetos básicos de licitação, projetos arquitetônicos, layout
 									</div>
 									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Enviar mensagem" class="primary" /></li>
+											<li><button class="primary" onclick="sendMessage();">Enviar Mensagem</button></li>
 											<li><input type="reset" value="Limpar" /></li>
 										</ul>
 									</div>
 								</div>
-							</form>
+							</div>
 						</div>
 					</section>
 
