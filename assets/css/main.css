@@ -4842,13 +4842,13 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .quotes-container {
 	position: relative;
-	background: transparent;
+	background: #f1f1f1f1;
   }
   
   /* Slides */
   .myQuotes {
 	display: none;
-	padding: 2rem 4rem 0 4rem;
+	padding: 2rem 4rem 1.5rem 4rem;
 	min-height: 6rem;
 	text-align: center;
   }
