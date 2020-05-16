@@ -79,6 +79,37 @@
 									  mercado público do bairro, com a proposta de um novo projeto de edifício 
 									  que abrigue de forma mais eficaz os pontos de comércio já existentes.
 								</p>
+
+								<!-- Slideshow container -->
+								<div class="quotes-container">
+
+									<!-- Full-width slides/quotes -->
+									<div class="myQuotes">
+									<q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+									<p class="authorQuote">- John Keats</p>
+									</div>
+								
+									<div class="myQuotes">
+									<q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+									<p class="authorQuote">- Ernest Hemingway</p>
+									</div>
+								
+									<div class="myQuotes">
+									<q>I have not failed. I've just found 10,000 ways that won't work.</q>
+									<p class="authorQuote">- Thomas A. Edison</p>
+									</div>
+								
+									<!-- Next/prev buttons -->
+									<a class="prevQuotes" onclick="plusQuotes(-1)">&#10094;</a>
+									<a class="nextQuotes" onclick="plusQuotes(1)">&#10095;</a>
+								</div>
+								
+								<!-- Dots/bullets/indicators -->
+								<div class="dotQuote-container">
+									<span class="dotQuote" onclick="currentQuote(1)"></span>
+									<span class="dotQuote" onclick="currentQuote(2)"></span>
+									<span class="dotQuote" onclick="currentQuote(3)"></span>
+								</div>
 							</div>
 						</section>
 					</section>
@@ -136,6 +167,37 @@
 			slides[slideIndex-1].style.display = "block";
 			dots[slideIndex-1].className += " active";
 		}
+
+
+		var quoteIndex = 1;
+		showQuotes(quoteIndex);
+
+		function plusQuotes(n) {
+			showQuotes(slideIndex += n);
+		}
+
+		function currentQuote(n) {
+			showQuotes(slideIndex = n);
+		}
+
+		function showQuotes(n) {
+		var i;
+		var slides = document.getElementsByClassName("myQuotes");
+		var dots = document.getElementsByClassName("dotQuote");
+		if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
+		}
+
+
+
 	</script>
 
 </html>
