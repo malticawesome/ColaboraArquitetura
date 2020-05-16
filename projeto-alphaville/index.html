@@ -60,6 +60,29 @@
 								<h3>PROJETO ARQUITETÔNICO - RESIDENCIAL ALPHAVILLE</h3>
 								<p>Projeto de estudo desenvolvido para um terreno no Condomínio Residencial Alphaville, onde seu conceito é a liberdade e integração de espaços, focando em áreas amplas e ventiladas. Projetado para uma família jovem de quatro integrantes, incluindo duas crianças, a premissa para a criação dos espaços foi o aproveitamento da luminosidade natural da incidência solar, o que resultou no uso de materiais como vidro e brises. O estilo da casa é voltado para o industrial/ rústico, utilizando materiais como tijolo aparente, madeira e metais em tons escuros. A casa de 1° andar possui aproximadamente 200 m² com sala de estar e jantar, cozinha, três banheiros, sendo dois suítes, três quartos, área de serviço, área gourmet, quarto reversível para escritório e solário.</p>
 
+								<!-- Slideshow container -->
+								<div class="quotes-container">
+
+									<!-- Full-width slides/quotes -->
+									<div class="myQuotes">
+										<p>“Hábil e pacientemente traduziram  o que queríamos. Adoramos o produto final!”- Hildebrando Diogenes</p>
+									</div>
+								
+									<div class="myQuotes">
+										<p>“... com muito profissionalismo recomendaram suas opiniões, mas ao mesmo tempo respeitando o gosto e opinião de seus clientes … deram dicas  em coisas  que eu não pensava  que fossem ficar tão boas… Me Surpreendi!” - Cliente Ap. Intermares A&P.</p>
+									</div>
+								
+									<div class="myQuotes">
+										<p>“Minha avaliação é que o trabalho é de excelência… Conheço o trabalho e sei que posso confiar na assistência durante e após a execução do projet” - Cliente Ap. Carapibus I&O.</p>
+									</div>
+								</div>
+								
+								<!-- Dots/bullets/indicators -->
+								<div class="dotQuote-container">
+									<span class="dotQuote" onclick="currentQuote(1)"></span>
+									<span class="dotQuote" onclick="currentQuote(2)"></span>
+									<span class="dotQuote" onclick="currentQuote(3)"></span>
+								</div>
 							</div>
 						</section>
 					</section>
@@ -89,7 +112,7 @@
 			<script src="../assets/js/main.js"></script>
 
 	</body>
-
+	
 	<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);
@@ -116,6 +139,34 @@
 			}
 			slides[slideIndex-1].style.display = "block";
 			dots[slideIndex-1].className += " active";
+		}
+
+
+		var quoteIndex = 1;
+		showQuotes(quoteIndex);
+
+		function plusQuotes(n) {
+			showQuotes(slideIndex += n);
+		}
+
+		function currentQuote(n) {
+			showQuotes(slideIndex = n);
+		}
+
+		function showQuotes(n) {
+		var i;
+		var slides = document.getElementsByClassName("myQuotes");
+		var dots = document.getElementsByClassName("dotQuote");
+		if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " active";
 		}
 	</script>
 
