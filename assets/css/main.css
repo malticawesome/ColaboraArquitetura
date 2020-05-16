@@ -4842,29 +4842,15 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .quotes-container {
 	position: relative;
-	background: #f1f1f1f1;
+	background: transparent;
   }
   
   /* Slides */
   .myQuotes {
 	display: none;
-	padding: 80px;
+	padding: 2rem 4rem 0 4rem;
+	min-height: 6rem;
 	text-align: center;
-  }
-  
-  /* Next & previous buttons */
-  .prevQuotes, .nextQuotes {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -30px;
-	padding: 16px;
-	color: #888;
-	font-weight: bold;
-	font-size: 20px;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
   }
   
   /* Position the "next button" to the right */
@@ -4884,7 +4870,7 @@ img {vertical-align: middle;}
   .dotQuote-container {
 	text-align: center;
 	padding: 20px;
-	background: #ddd;
+	background:transparent;
   }
   
   /* The dots/bullets/indicators */
