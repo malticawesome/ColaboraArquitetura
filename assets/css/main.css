@@ -4833,7 +4833,7 @@ img {vertical-align: middle;}
 		}
 
 		.tiles article {
-			width: 100%;
+			width: 100% !important;
 			margin: 1.25em 0 0 0;
 		}
 
